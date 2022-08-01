@@ -29,7 +29,7 @@ if __name__ == "__main__":
             lp = lp.reshape([21, 2])
             nme = np.sum(np.linalg.norm(lp - lt, axis=1) / 21)
             count += 1
-            if nme < 0.03:
+            if nme < 1.22:
                 count_lmk += 1
             if yt == yp:
                 count_gesture += 1
